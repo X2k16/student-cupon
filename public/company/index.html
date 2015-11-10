@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/lib/validationEngine.jquery.css">
+
+  <script src="js/lib/jquery-1.11.3.min.js"></script>
+
+  <!-- ▼バリデーション -->
+  <script src="js/lib/jquery.validationEngine.js"></script>
+  <script src="js/lib/jquery.validationEngine-ja.js"></script>
+  <script src="js/lib/jquery.validate.min.js"></script>
+
+  <script>
+  (function(){
+    var _UA = navigator.userAgent;
+    if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('Android') > -1) {
+      document.write('<link rel="stylesheet" href="css/lib/jquery.mobile-1.4.5.min.css">');
+      document.write('<script src="js/lib/jquery.mobile-1.4.5.min.js"><\/script>');
+      document.write('<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"><\/script>');
+      document.write('<script src="js/mobile.js"><\/script>');
+    }else{
+      document.write('<link rel="stylesheet" href="css/pc.css">');
+      document.write('<script src="js/pc.js"><\/script>');
+    }
+  })();
+  </script>
+   <script src="js/register.js"></script>
+
+  <title>参加支援企業割クーポン発行ページ</title>
+</head>
+
+<body>
+  <section>
+  <div id="mobile_img" style="display: none"><img src="css/mobile.jpg" width="100%" ></div>
+    <h1>参加支援企業割クーポン発行フォーム</h1>
+    <form id="input_group">
+      <div>
+        <p><span class="ate1"></span>名前：</p>
+        <p>
+          <input type="text" name="name" class="input_text validate[required] required" placeholder="クロス　太郎">
+          <span class="error-place"></span>
+        </p>
+      </div>
+      <div>
+        <p><span class="ate1"></span>メールアドレス：</p>
+        <p>
+        <input type="email" name="email" class="input_text validate[required] required" placeholder="cross2016@cross.ac.jp">
+        <span id="email_error" class="error-place"></span></p>
+      </div>
+      <div>
+        <p><span class="ate1"></span>性別：</p>
+        <input type="radio" name="sex" value="0" id="male" class="validate[required] required">
+        <label for="male">男</label>
+
+        <input type="radio" name="sex" value="1" id="famale" class="validate[required] required">
+        <span class="error-place"></span>
+        <label for="famale">女</label>
+      </div>
+      <div>
+        <p><span class="ate1"></span>会社名：</p>
+        <p>
+          <input type="text" name="company_name" class="input_text validate[required] required" placeholder="クロス株式会社">
+          <span class="error-place"></span>
+        </p>
+      </div>
+      <div>
+        <p><span class="ate1"></span>会社URL：</p>
+        <p>
+          <input type="text" name="company_url" class="input_text validate[required] required" placeholder="http://2016.cross-party.com/">
+          <span class="error-place"></span>
+        </p>
+      </div>
+      <div>
+        <p><span class="ate1"></span>代表メールアカウント(掲載のご連絡をします)：</p>
+        <p>
+        <input type="email" name="company_email" class="input_text validate[required] required" placeholder="cross2016@cross.ac.jp">
+        <span id="company_email_error" class="error-place"></span></p>
+      </div>
+      <div>
+        <input type="submit" value="登録する" class="submit_btn">
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>
