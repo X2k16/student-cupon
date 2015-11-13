@@ -59,7 +59,7 @@ Peatixのチケット販売サイトから購入手続きに進んでいただ�
 枚数入力ページにて以下の割引コードをご入力ください。
 
 割引コード　　　　    : $code
-チケット販売サイトURL : https://peatix.com/sales/event/125846/tickets
+チケット販売サイトURL : https://peatix.com/sales/event/129429/tickets
 
 
 その他、ご要望、ご質問などは、
