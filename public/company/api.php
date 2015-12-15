@@ -49,6 +49,7 @@ try{
 	$code = $stmt->fetchColumn();
 
 	// メール本文
+	$name = $data['name'];
 	$message = "$name 様
 
 エンジニアサポート CROSS 2016実行委員会です。
